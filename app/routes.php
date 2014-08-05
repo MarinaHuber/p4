@@ -57,6 +57,33 @@ Route::get('/home', function() {
     return View::make('home');
 });
 
+
+# Process add form
+Route::post('/add/', function() {
+
+    $sound = new Sound();
+
+    $sound->title = Input::get('title');
+    $sound->author = Input::get('author');
+    $sound->cover = Input::get('cover');
+
+    # Magic: Eloquent
+    $sound->save();
+
+    return View::make('soundadded');;
+
+});
+
+
+Route::get('/logout', function() {
+
+    # Log out
+    Auth::logout();
+
+    # Send them to the homepage
+    return Redirect::to('/');
+
+});
 /*
 |--------------------------------------------------------------------------
 | Tokin Routes

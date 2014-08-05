@@ -29,7 +29,7 @@
     {{ Form::open(array('url' => '/signup', 'method' => 'POST')) }}
         <div class="content">
             <div class="email">
-                {{ Form::label("email", "Email:") }}
+                {{ Form::label("email", "___Email:") }}
                 {{ Form::text('email') }}
             </div>
             <div class="username">
@@ -39,6 +39,8 @@
             <div class="password">              {{ Form::label("password", "Password:") }}
                 {{ Form::password('password') }}
             </div>
+            <br>
+        
             <div class="submit">
                 {{ Form::submit('Sign Up!', array('class' => 'signup')); }}
             </div>
