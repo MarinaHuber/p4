@@ -20,14 +20,14 @@ Yay logged in! | <a href='/logout'>Logout here</a>
 <br>
 
 
-<p class="paragraph">GoodSounds.is addition to your portfolio or filter for your SoundCloud sounds.</p>
+<p class="paragraph">GoodSounds.is addition to your portfolio works best when connected through SoundCloud.</p>
 
 
 <div id="navbar">
 	<h5><a href="/spots">all</a></h5>	
 	<h5><a href="/add">add a sound</a></h5>
 	<h5><a href="/signup">filter by location</a></h5>
-	<h5><a href="/signup">filter by ganer</a></h5>
+	<h5><a href="/signup">filter by genre</a></h5>
 	
 </div>
 

@@ -10,6 +10,7 @@ return array(
     'Acme\\Mailers\\UserMailer' => $baseDir . '/app/models/mailers/UserMailer.php',
     'Adavkay\\Soundcloud\\Facades\\Soundcloud' => $vendorDir . '/adavkay/laravel-soundcloud/src/Adavkay/Soundcloud/Facades/Soundcloud.php',
     'Adavkay\\Soundcloud\\SoundcloudServiceProvider' => $vendorDir . '/adavkay/laravel-soundcloud/src/Adavkay/Soundcloud/SoundcloudServiceProvider.php',
+    'AddUsernameField' => $baseDir . '/app/database/migrations/2014_08_06_001741_add_username_field.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',

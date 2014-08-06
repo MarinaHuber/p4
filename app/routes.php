@@ -26,14 +26,15 @@ Route::post( '/signup', array( 'before' => 'csrf', function(){
     $user->email = Input::get('email');
     $user->password = Hash::make(Input::get('password'));
     $user->username = Input::get('username');
-
+    $user->save();
     try {
-        $user->save();
+
     }
     catch ( Exception $e ) {
-        return Redirect::to('/signup')
+
+        /*return Redirect::to('/signup')
                             ->with('flash_message',"Sounds I did not got all of that. would you mind repeating yourself?")
-                            ->withInput();
+                            ->withInput(); */
     }
 
     Auth::login($user);
@@ -41,7 +42,10 @@ Route::post( '/signup', array( 'before' => 'csrf', function(){
 }));
 
 
-# Home page
+
+
+
+# Loging in with Auth0
 Route::get('/', array('before' => 'guest', function() {
 
     require(app_path() . '/views/Soundcloud.php');
@@ -52,6 +56,9 @@ Route::get('/', array('before' => 'guest', function() {
      return View::make('index')->with(array('auth_url'=>$authorizeUrl,'track1'=>"track name"));
 
 }));
+
+
+
 
 Route::get('/home', function() {
     return View::make('home');
