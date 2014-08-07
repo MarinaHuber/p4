@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1NAVY0BBGr6610lW7XDQb5X7bN7AvgKSE4WhxFV7U2qY/
 
 ## Official Documentation
 
-Documentation for the framework can be found I found on the http://laracast.com
+Documentation for the framework I found on the http://laracast.com
 
 ### Dependencies
 
