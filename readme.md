@@ -2,6 +2,8 @@
 
 url: http://goodsounds.gopagoda.com/
 
+You can log in with a username AND password of test@test.com
+
 GoodSounds is personalized SoundCloud feature. It is a work in progress as the Soundcloud Authorization
 login is not added jet, unfortunately.
 What the app should do is show statistics to your sounds, filter them by users likes, comments and countries.
