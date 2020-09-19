@@ -1,6 +1,4 @@
 ## Laravel PHP Framework in progress
-first of all sorry i'm late for pasting this repo to canvas, i keep forgeting that path..
-
 
 url: http://goodsounds.gopagoda.com/
 
